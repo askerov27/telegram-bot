@@ -26,6 +26,7 @@ bot.on("message", (msg) => {
                 }
             }
         );
+        //12
     } else {
         bot.sendMessage(msg.chat.id, "Выбирай", {
             reply_markup: {
