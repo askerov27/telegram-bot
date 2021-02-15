@@ -6,7 +6,6 @@ const bot = new TelegramBot(token, {
 });
 
 const TOKEN = process.env.token || 'YOUR_TELEGRAM_BOT_TOKEN';
-const TelegramBot = require('../..');
 const options = {
     webHook: {
         // Port to which you should bind is assigned to $PORT variable
@@ -22,7 +21,6 @@ const options = {
 // to get this automatically
 // See: https://devcenter.heroku.com/articles/dyno-metadata
 const url = process.env.APP_URL || 'https://telegram-bot-xenia.herokuapp.com:443';
-const bot = new TelegramBot(TOKEN, options);
 
 
 // This informs the Telegram servers of the new webhook.
